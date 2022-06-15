@@ -1,0 +1,155 @@
+// Container
+.container {
+  max-width: ($containerWidth + $containerPadding) + px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $containerSidePadding + px;
+
+  @media (max-width: $breakpoint1450) {
+    max-width: 1200px;
+  }
+
+  @media (max-width: $breakpoint992) {
+    max-width: 970px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    max-width: 740px;
+  }
+
+  @media (max-width: $breakpoint480) {
+    max-width: none;
+  }
+}
+
+// Body Locked
+body {
+  &.locked {
+    overflow: hidden;
+  }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+// btn
+.btn {
+  display: inline-block;
+  background: #57d9a6;
+  border-radius: 4px;
+  padding: 16px 25px;
+  transition: 0.3s ease;
+  &:hover {
+    background: #2b976c;
+  }
+}
+
+// .section__styles
+
+.section {
+  // .section__title
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+
+    color: #f6f6f8;
+  }
+  // .section__subtitle
+  &__subtitle {
+    font-style: normal;
+    font-size: 22px;
+    line-height: 33px;
+
+    color: #f6f6f8;
+  }
+}
+
+// .cards__styles
+
+// .cards {
+//   // .cards__items
+//   &__items {
+//     display: flex;
+//     gap: 48px;
+//     @media (max-width: $breakpoint992) {
+//       gap: 35px;
+//     }
+//   }
+//   // .cards__item
+//   &__item {
+//     flex: 1 1 393px;
+//     display: flex;
+//     flex-direction: column;
+//   }
+//   // .cards__image
+//   &__image {
+//     img {
+//       max-width: 100%;
+//     }
+//   }
+//   // .cards__text
+//   &__text {
+//     background-color: #ffffff;
+//     padding: 22px 25px 25px 24px;
+//     flex: 1 1 auto;
+//     display: flex;
+//     flex-direction: column;
+//   }
+//   // .cards__title
+//   &__title {
+//     flex: 1 1 auto;
+//     font-style: normal;
+//     font-size: 24px;
+//     line-height: 29px;
+//     color: #23233b;
+//   }
+//   // .cards__subtitle
+//   &__subtitle {
+//     font-style: normal;
+//     font-size: 17px;
+//     line-height: 27px;
+//     color: #4e4e65;
+//     margin-top: 8px;
+//   }
+//   // .cards__price
+//   &__price {
+//     font-style: normal;
+//     font-size: 22px;
+//     line-height: 27px;
+//     color: #23233b;
+//     margin-top: 15px;
+//     span {
+//       color: #b2b2bf;
+//       margin-right: 10px;
+//     }
+//   }
+//   // .cards__link
+//   &__link {
+//     margin-top: 20px;
+
+//     a {
+//       font-style: normal;
+//       font-size: 16px;
+//       line-height: 21px;
+//       letter-spacing: 1px;
+//       text-transform: uppercase;
+//       color: #57d9a6;
+//       transition: color 0.3s ease;
+//     }
+//     a:hover {
+//       color: #23233b;
+//       font-weight: bold;
+//     }
+//   }
+// }
